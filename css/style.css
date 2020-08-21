@@ -1,0 +1,164 @@
+@font-face {
+
+    font-family: 'Montserrat-Regular';
+    src: url('../fonts/Montserrat-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+    
+}
+
+@font-face {
+
+    font-family: 'Montserrat-Medium';
+    src: url('../fonts/Montserrat-Medium.ttf');
+    font-weight: bold;
+    font-style: normal;
+    
+}
+
+@font-face {
+
+    font-family: 'Montserrat-Bold';
+    src: url('../fonts/Montserrat-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+    
+}
+
+/* variables of colors & fonts */
+:root {
+    --bg-color: #171717;
+    --text-color: #EFEAEA;
+    --accent-color: #F2DE27;
+    --text-back-color: #EEEBEB; 
+    --font-size-text: 1.125rem;     /* 16 px = 1 rem */
+    --font-size-heading: 4rem;
+    --font-size-back-text: 32rem;
+}
+
+/* ! variables of colors & fonts ! */
+
+body {
+    font-family: Montserrat-Regular;
+    overflow: hidden;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    position: relative;
+}
+
+/* MAIN SCREEN */
+
+.hi {
+    color: var(--text-back-color);
+    font-size: var(--font-size-back-text);
+    opacity: .1;
+    z-index: 0;
+    position: absolute;
+    top: 7rem;
+    right: 7rem;
+}
+
+.professions {
+    margin-top: 17rem;
+}
+
+.professions h3 {
+    font-family: Montserrat-Medium;
+    font-size: var(--font-size-heading);
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: row;
+    margin-top: 4rem;
+}
+
+.social-links a {
+    position: relative;
+    z-index: 1;
+    padding: 1.5625rem 2.8125rem;
+    border: 1px solid var(--text-color);
+    margin-right: auto;
+    text-decoration: none;
+    color: var(--text-color);
+    border-radius: 62.5rem;
+    transition: 1s;
+}
+
+.social-links a:hover {
+    cursor: pointer;
+    color: var(--bg-color);
+    background-color: var(--accent-color);
+    font-family: Montserrat-Bold;
+    transition: 1s;
+}
+
+/* Animation of arrow down */
+.arrow {
+    text-align: center;
+    position: relative;
+    top: 5rem;
+    left: 14rem;
+    animation: move 5s infinite ease-in-out;
+}
+
+@keyframes move {
+    30%, 100% {
+      opacity: 0;
+      transform: translate(0, 100px);
+    }
+    0% {
+      opacity: 0;
+    }
+    15% {
+      opacity: 1;
+    }
+}
+
+/* ! Animation of arrow down ! */
+
+#circle1 {
+    width: 2rem; 
+    height: 2rem;
+    background: var(--accent-color);
+    border-radius: 50%;
+    position: absolute;
+    top: 20rem;
+    left: 90rem;
+}
+
+#circle2 {
+    width: 2rem; 
+    height: 2rem;
+    background: var(--bg-color);
+    border: 1px solid var(--text-color);
+    border-radius: 50%;
+    position: absolute;
+    top: 24rem;
+    left: 90rem;
+}
+
+#circle3 {
+    width: 2rem; 
+    height: 2rem;
+    background: var(--bg-color);
+    border: 1px solid var(--text-color);
+    border-radius: 50%;
+    position: absolute;
+    top: 28rem;
+    left: 90rem;
+}
+
+#circle4 {
+    width: 2rem; 
+    height: 2rem;
+    background: var(--bg-color);
+    border: 1px solid var(--text-color);
+    border-radius: 50%;
+    position: absolute;
+    top: 32rem;
+    left: 90rem;
+}
