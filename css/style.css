@@ -55,11 +55,12 @@ body {
     z-index: 0;
     position: absolute;
     top: 7rem;
-    right: 7rem;
+    right: 5rem;
 }
 
 .professions {
     margin-top: 17rem;
+    margin-left: 2rem;
 }
 
 .professions h3 {
@@ -74,6 +75,7 @@ body {
     display: flex;
     flex-direction: row;
     margin-top: 4rem;
+    margin-left: 2rem;
 }
 
 .social-links a {
@@ -98,11 +100,13 @@ body {
 
 /* Animation of arrow down */
 .arrow {
+    margin-left: 1.35rem;
     text-align: center;
     position: relative;
     top: 5rem;
     left: 14rem;
     animation: move 5s infinite ease-in-out;
+    z-index: 1;
 }
 
 @keyframes move {
@@ -161,4 +165,66 @@ body {
     position: absolute;
     top: 32rem;
     left: 90rem;
+}
+
+.me {
+    position: relative;
+    z-index: 0;
+    width: auto;
+    height: auto;
+}
+
+.me img {
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 4rem;
+    left: -39rem;
+}
+
+
+/* ABOUT SCREEN */
+
+.about {
+    margin-top: 14rem;
+}
+
+.about-me {
+    font-family: Montserrat-Medium;
+    font-size: var(--font-size-heading);
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.intro-me {
+    font-family: Montserrat-Regular;
+    font-size: var(--font-size-text);
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.download {
+    margin-top: 3rem;
+}
+
+.download a {
+    position: relative;
+    z-index: 1;
+    padding: 1.5625rem 2.8125rem;
+    border: 1px solid var(--text-color);
+    margin-right: auto;
+    text-decoration: none;
+    color: var(--text-color);
+    border-radius: 62.5rem;
+    transition: 1s;
+}
+
+.download a:hover {
+    cursor: pointer;
+    color: var(--bg-color);
+    background-color: var(--accent-color);
+    font-family: Montserrat-Bold;
+    transition: 1s;
 }
