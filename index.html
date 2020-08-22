@@ -71,7 +71,7 @@
                 <h3 class="my-portfolio">Portfolio</h3>
                 <div class="portfolio-images">
                   <div class="col-xl-6 grid-portfolio">
-                    <img src="img/cases/WebUI.jpg" alt="WebUI">
+                    <img src="img/cases/WebUI.jpg" alt="WebUI" data-toggle="modal" data-target="#modelId">
                     <img src="img/cases/OneDayTrip.jpg" alt="OneDayTrip">
                   </div>
                   <div class="col-xl-6 grid-portfolio">
@@ -191,6 +191,55 @@
           <div id="circle4"></div>
           -->
       </div>
+
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modelId">
+        Launch
+      </button>
+      
+      <!-- Modal -->
+      <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-xl-12 popup">
+                    <div class="col-xl-7">
+                      <img class="webui" src="img/cases/WebUI.jpg" alt="WebUI">
+                    </div>
+                    <div class="col-xl-5">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <img class="close" src="img/close.svg" alt="close">
+                      </button>
+                      <h3 class="webui-heading">WebUI</h3>
+                      <p class="webui-text">
+                        The landing page for the web studio who creates websites and apps. <br><br>
+                        It was decided to show the modernity and professionalism of the web studio with vector illustrations and colors.<br><br>
+                        To learn more about the case on Behance, click on the button Learn more.
+                      </p>
+                      <div class="popup-links">
+                        <a class="learn-more" href="https://www.behance.net/gallery/102216925/WebUI-Design-Concept-Landing-Page/" target="_blank" rel="noopener noreferrer">Learn more</a>
+                        <a href="#" data-dismiss="modal">Get back</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <script>
+        $('#exampleModal').on('show.bs.modal', event => {
+          var button = $(event.relatedTarget);
+          var modal = $(this);
+          // Use above variables to manipulate the DOM
+          
+        });
+      </script>
 
     </div>
 

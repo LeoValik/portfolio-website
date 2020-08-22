@@ -175,10 +175,15 @@ body {
     left: 90rem;
 }
 */
+.onepage-wrapper .section {
+    width: 100%;
+    height: 100vh;
+}
 .onepage-pagination {
     right: 10rem;
-    top: 40%;
+    top: 31%;
 }
+
 
 .onepage-pagination li a.active:before {
     /* width: 10px; */
@@ -387,3 +392,89 @@ body {
     transition: 1s;
 }
 /* ! CONTACT SCREEN ! */
+
+/* POPUP */
+
+.modal-content {
+    background-color: var(--bg-color);
+    width: 90vw;
+    height: 70vh;
+    border-radius: 2rem;
+}
+
+.modal.show .modal-dialog {
+    margin: 15vh 5vw;
+}
+
+.modal-body {
+    padding: 0;
+}
+
+.popup {
+    display: flex;
+    padding: 0;
+    flex-direction: row;
+}
+
+.webui {
+    width: 100%;
+    margin-left: -1rem;
+    border-radius: 2rem 0 0 2rem;
+    height: -webkit-fill-available;
+}
+
+.popup-links {
+    margin-top: 3rem;
+}
+
+.popup-links a {
+    position: relative;
+    z-index: 1;
+    padding: 1.5625rem 2.8125rem;
+    border: 1px solid var(--text-color);
+    margin-right: 4rem;
+    text-decoration: none;
+    color: var(--text-color);
+    border-radius: 62.5rem;
+    transition: 1s;
+}
+
+.popup-links a.learn-more {
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+}
+
+.popup-links a:hover {
+    cursor: pointer;
+    color: var(--bg-color);
+    background-color: var(--accent-color);
+    font-family: Montserrat-Bold;
+    transition: 1s;
+}
+
+/*.button.close {
+    width: auto;
+    height: fit-content;
+    color: var(--text-color);
+}*/
+
+.close {
+    margin-top: 0.5rem;
+}
+
+.webui-heading {
+    font-family: Montserrat-Medium;
+    font-size: var(--font-size-heading);
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 1;
+    margin-top: 6rem;
+}
+
+.webui-text {
+    font-family: Montserrat-Regular;
+    font-size: var(--font-size-text);
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 1;
+}
