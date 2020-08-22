@@ -306,6 +306,7 @@ body {
     margin-right: 2rem;
     height: 14rem;
     border-radius: 1rem;
+    cursor: pointer;
 }
 
 .grid-portfolio {
@@ -424,7 +425,7 @@ body {
 }
 
 .popup-links {
-    margin-top: 3rem;
+    margin-top: 4rem;
 }
 
 .popup-links a {
@@ -460,12 +461,13 @@ body {
 
 .close {
     margin-top: 0.5rem;
+    opacity: 1;
 }
 
 .webui-heading {
     font-family: Montserrat-Medium;
     font-size: var(--font-size-heading);
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     position: relative;
     z-index: 1;
     margin-top: 6rem;
@@ -477,4 +479,5 @@ body {
     margin-bottom: 2rem;
     position: relative;
     z-index: 1;
+    padding: 0;
 }
