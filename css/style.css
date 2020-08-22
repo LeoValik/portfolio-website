@@ -48,14 +48,22 @@ body {
 
 /* MAIN SCREEN */
 
+#main-screen {
+    position: relative !important;
+}
+
+.main-screen {
+    margin-left: auto;
+}
+
 .hi {
     color: var(--text-back-color);
     font-size: var(--font-size-back-text);
     opacity: .1;
     z-index: 0;
     position: absolute;
-    top: 7rem;
     right: 5rem;
+    bottom: 0rem;
 }
 
 .professions {
@@ -123,7 +131,7 @@ body {
 }
 
 /* ! Animation of arrow down ! */
-
+/*
 #circle1 {
     width: 2rem; 
     height: 2rem;
@@ -166,6 +174,42 @@ body {
     top: 32rem;
     left: 90rem;
 }
+*/
+.onepage-pagination {
+    right: 10rem;
+    top: 40%;
+}
+
+.onepage-pagination li a.active:before {
+    /* width: 10px; */
+    /* height: 10px; */
+    background: var(--accent-color);
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    /* background: none; */
+    /* border: 1px solid black; */
+    margin-top: -4px;
+    left: auto;
+}
+
+.onepage-pagination li a:before {
+    content: '';
+    position: absolute;
+    /*-webkit-border-radius: 10px;*/
+    width: 2rem;
+    height: 2rem;
+    background: var(--bg-color);
+    border: 1px solid var(--text-color);
+    border-radius: 50%;
+
+}
+
+.onepage-pagination li {
+    padding: 0;
+    text-align: center;
+    margin-top: 2rem;
+}
 
 .me {
     position: relative;
@@ -186,8 +230,10 @@ body {
 
 /* ABOUT SCREEN */
 
+
 .about {
     margin-top: 14rem;
+    margin-left: auto;
 }
 
 .about-me {
@@ -236,6 +282,7 @@ body {
 
 .portfolio {
     margin-top: 5rem;
+    margin-left: auto;
 }
 
 .my-portfolio {
@@ -252,6 +299,8 @@ body {
     flex-direction: column;
     margin-bottom: 2rem;
     margin-right: 2rem;
+    height: 14rem;
+    border-radius: 1rem;
 }
 
 .grid-portfolio {
@@ -292,6 +341,7 @@ body {
 
 .contacts {
     margin-top: 19rem;
+    margin-left: auto;
 }
 
 .contact-me {
