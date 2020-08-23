@@ -48,6 +48,14 @@ body {
 
 /* MAIN SCREEN */
 
+.mobile-photo {
+    display: none;
+}
+
+.dekstop-photo {
+    display: block;
+}
+
 #main-screen {
     position: relative !important;
 }
@@ -488,15 +496,128 @@ body {
    
 }
 
-@media (min-width: 600px) { 
+@media (min-width: 768px) and (max-width: 991px) {
+    /* variables of colors & fonts for min-width: 900px;*/
+    :root {
+        --bg-color: #171717;
+        --text-color: #EFEAEA;
+        --accent-color: #F2DE27;
+        --text-back-color: #EEEBEB; 
+        --font-size-text: 1rem;     /* 16 px = 1 rem */
+        --font-size-heading: 2rem;
+        --font-size-back-text: 20.625rem;
+    } 
+    .main-screen {
+        left: 10%;
+        width: 100%;
+        height: 100%;
+        top: -13rem;
+    }
+    .mobile-photo {
+        display: block;
+    }
     
+    .dekstop-photo {
+        display: none;
+    }
+    .hi {
+        right: 12rem;
+        bottom: 35rem;
+    }
+    .professions {
+        margin-top: 17rem;
+        margin-left: 10rem;
+    }
+    .me {
+        height: 50vh;
+        left: 45%;
+        top: -45rem;
+    }
+    .me img {
+        left: -29vw;
+    }
+    .about {
+        margin-top: 14rem;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .portfolio {
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .portfolio-images {
+        width: 50%;
+    }
+    .contacts {
+        left: 0;
+    }
+    .arrow-first {
+        left: 25vw !important;
+        top: 50%;
+    }
+    .arrow {
+        left: 32vw;
+        top: 50%;
+    }
+    .webui {
+        border-radius: 0 0 2rem 2rem;
+        width: 90vw;
+        height: 50vh;
+        margin-top: 7vh;
+    }
+    .webui-heading {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        width: auto;
+        z-index: 0;
+    }
+    .popup {
+        flex-direction: column-reverse;
+    }
+    .modal.show .modal-dialog {
+        margin: 3vh 5vw;
+    }
+    .close {
+        z-index: 1;
+        position: absolute;
+        left: 93%;
+    }
+
 }
 
-@media (min-width: 900px) { 
-    
+@media (min-width: 992px) and (max-width: 1199px) { 
+    /* variables of colors & fonts for min-width: 900px;*/
+    :root {
+        --bg-color: #171717;
+        --text-color: #EFEAEA;
+        --accent-color: #F2DE27;
+        --text-back-color: #EEEBEB; 
+        --font-size-text: 1.125rem;     /* 16 px = 1 rem */
+        --font-size-heading: 3.25rem;
+        --font-size-back-text: 25rem;
+    }
+    .me {
+        height: 93vh;
+        top: 7vh;
+    }
+    .me img {
+        left: -40vw;
+    }
+    .social-links a {
+        margin-right: 9rem;
+    }
+    .main-screen {
+        left: 31%;
+    }
+    .hi {
+        right: 28rem;
+        bottom: 3rem;
+    }
 }
 
-@media (min-width: 1200px) { 
+@media (min-width: 1200px) and (max-width: 1799px) { 
     .main-screen {
         left: 38vw;
         width: 100%;
