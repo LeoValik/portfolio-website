@@ -537,7 +537,7 @@ body {
         left: 2rem;
         width: 100%;
         height: 100%;
-        top: -9rem;
+        top: -12rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -561,7 +561,7 @@ body {
         bottom: 0;
         position: fixed;
         left: auto;
-        top: 15%;
+        top: 5rem;
         display: flex;
         justify-content: center;
         height: 100%;
@@ -589,7 +589,7 @@ body {
     .me img {
         width: auto;
         position: relative;
-        top: -68vh;
+        top: -70vh;
         /*position: fixed;
         width: -webkit-fill-available;*/
         height: auto;
@@ -779,7 +779,7 @@ body {
     }
 }
 
-@media (min-width: 576px) and (max-width: 767px) { 
+@media (min-width: 576px) and (max-width: 768px) { 
    /* variables of colors & fonts for min-width: 576px;*/
    :root {
     --bg-color: #171717;
@@ -917,7 +917,7 @@ body {
     }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 769px) and (max-width: 991px) {
     /* variables of colors & fonts for min-width: 900px;*/
     :root {
         --bg-color: #171717;
@@ -1028,7 +1028,7 @@ body {
         top: 7vh;
     }
     .me img {
-        left: -40vw;
+        left: -50vw;
     }
     .social-links a {
         margin-right: 9rem;
@@ -1039,6 +1039,30 @@ body {
     .hi {
         right: 28rem;
         bottom: 3rem;
+    }
+    .about {
+        left: 30%;
+    }
+    .portfolio {
+        left: 28%;
+    }
+    .portfolio-images img {
+        width: auto;
+    }
+    .more-works a{
+        left: -38%;
+    }
+    .popup-links {
+        margin-top: 3rem;
+    }
+    .popup-links a {
+        margin-right: 1.8rem;
+    }
+    .webui-heading {
+        margin-top: 3rem;
+    }
+    .contacts {
+        left: 35%;
     }
 }
 
@@ -1069,6 +1093,9 @@ body {
         left: 39vw;
         width: 100%;
         height: 100%;
+    }
+    .webui-heading {
+        margin-top: 4rem;
     }
 }
 
