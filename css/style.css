@@ -502,7 +502,7 @@ body {
 
 /* ADAPTIVE */
 
-@media (max-width: 575px) {
+@media screen and (max-width: 575px) {
    /* variables of colors & fonts for max-width: 575px;*/
    :root {
     --bg-color: #171717;
@@ -789,7 +789,7 @@ body {
     }
 }
 
-@media (min-width: 576px) and (max-width: 768px) { 
+@media screen and (min-width: 576px) and (max-width: 768px) { 
    /* variables of colors & fonts for min-width: 576px;*/
    :root {
     --bg-color: #171717;
@@ -927,7 +927,234 @@ body {
     }
 }
 
-@media (min-width: 769px) and (max-width: 991px) {
+/* SPECIAL FOR iPad */
+@media screen and (width: 768px) and (orientation: portrait) {
+    :root {
+        --bg-color: #171717;
+        --text-color: #EFEAEA;
+        --accent-color: #F2DE27;
+        --text-back-color: #EEEBEB; 
+        --font-size-text: 1rem;     /* 16 px = 1 rem */
+        --font-size-heading: 2rem;
+        --font-size-back-text: 20.625rem;
+    } 
+    .onepage-pagination li a.active:before {
+        top: 80%;
+    }
+    .onepage-pagination {
+        display: flex;
+        flex-direction: row;
+        right: 0;
+        top: 0;
+        left: 0;
+        position: absolute;
+        justify-content: center;
+    }
+    .onepage-pagination li {
+        margin-right: 2rem;
+        margin-top: 1rem;
+    }
+    .main-screen {
+        left: 2rem;
+        width: 100%;
+        height: 100%;
+        top: -9rem;
+    }
+    .mobile-photo {
+        display: block;
+    }
+
+    .dekstop-photo {
+        display: none;
+    }
+    .hi {
+        bottom: 46rem;
+        right: 10rem;
+    }
+    .professions {
+        margin-top: 17rem;
+        margin-left: 12rem;
+    }
+    .social-links {
+        margin-left: 6rem;
+    }
+    .me {
+        height: 50vh;
+        left: 0;
+        top: -45rem;
+    }
+    .me img {
+        position: relative;
+        left: 1rem;
+        top: -4rem;
+    }
+    .about {
+        margin-top: 14rem;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .about-me {
+        text-align: center;
+    }
+    .intro-me {
+        margin-left: 3rem;
+    }
+    .download {
+        text-align: center;
+    }
+    .my-portfolio {
+        text-align: center;
+    }
+    .portfolio {
+        left: 0;
+        width: 100%;
+        height: 100%;
+        margin-top: 7rem;
+    }
+    .portfolio-images {
+        width: 50%;
+    }
+    .contacts {
+        left: 0;
+    }
+    .contact-me {
+        text-align: center;
+    }
+    .contact-text {
+        display: flex;
+        justify-content: center;
+    }
+    .contact-links {
+        margin-left: 7rem;
+    }
+    .arrow-first {
+        top: 40vh;
+        position: fixed;
+        display: flex;
+        left: 0;
+        margin: auto;
+        right: 0;
+        bottom: 0;
+    }
+    .arrow-second {
+        top: 300vh;
+        position: fixed;
+        display: flex;
+        left: 0;
+        margin: auto;
+        right: 0;
+        bottom: 0;
+    }
+    .arrow-third {
+        top: 560vh;
+        position: fixed;
+        display: flex;
+        left: 0;
+        margin: auto;
+        right: 0;
+        bottom: 0;
+    }
+    /*.arrow {
+        top: 300vh;
+        position: fixed;
+        display: flex;
+        left: 0;
+        margin: auto;
+        right: 0;
+        bottom: 0;
+    }*/
+    .webui {
+        border-radius: 0 0 2rem 2rem;
+        width: 90vw;
+        height: 46vh;
+        margin-top: 7vh;
+    }
+    .webui-heading {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        width: auto;
+        z-index: 0;
+    }
+    .popup {
+        flex-direction: column-reverse;
+    }
+    .modal.show .modal-dialog {
+        margin: 3vh 5vw;
+    }
+    .close {
+        z-index: 1;
+        position: absolute;
+        left: 93%;
+    }
+    .more-works a {
+        white-space: pre;
+    }
+}
+
+/* SPECIAL FOR iPad Pro */
+@media screen and (width: 1024px) and (orientation: portrait) {
+    :root {
+        --bg-color: #171717;
+        --text-color: #EFEAEA;
+        --accent-color: #F2DE27;
+        --text-back-color: #EEEBEB; 
+        --font-size-text: 1.125rem;     /* 16 px = 1 rem */
+        --font-size-heading: 3.25rem;
+        --font-size-back-text: 25rem;
+    }
+    .me {
+        height: 93vh;
+        top: 7vh;
+    }
+    .me img {
+        left: -8vw !important;
+        width: 1000%;
+        top: 37vh;
+        height: auto;
+    }
+    .social-links a {
+        margin-right: 9rem;
+    }
+    .main-screen {
+        top: -13rem;
+        left: 14rem !important;
+    }
+    .hi {
+        right: 28rem;
+        bottom: 3rem;
+    }
+    .about {
+        margin-top: 5rem;
+        left: 10rem !important;
+    }
+    .portfolio {
+        left: 9rem !important;
+    }
+    .portfolio-images .vou-shop {
+        width: 34%;
+    }
+    .portfolio-images img {
+        width: auto;
+    }
+    .more-works a{
+        left: -38%;
+    }
+    .popup-links {
+        margin-top: 3rem;
+    }
+    .popup-links a {
+        margin-right: 1.8rem;
+    }
+    .webui-heading {
+        margin-top: 3rem;
+    }
+    .contacts {
+        left: 15rem !important;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 991px) {
     /* variables of colors & fonts for min-width: 900px;*/
     :root {
         --bg-color: #171717;
@@ -1022,7 +1249,7 @@ body {
 
 }
 
-@media (min-width: 992px) and (max-width: 1199px) { 
+@media screen and (min-width: 992px) and (max-width: 1199px) { 
     /* variables of colors & fonts for min-width: 900px;*/
     :root {
         --bg-color: #171717;
@@ -1079,7 +1306,7 @@ body {
     }
 }
 
-@media (min-width: 1200px) and (max-width: 1799px) { 
+@media screen and (min-width: 1200px) and (max-width: 1799px) { 
     .main-screen {
         left: 38vw;
         width: 100%;
@@ -1112,7 +1339,7 @@ body {
     }
 }
 
-@media (min-width: 1800px) { 
+@media screen and (min-width: 1800px) { 
     .me img{
         left: -36vw;
     }
