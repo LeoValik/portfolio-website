@@ -315,6 +315,7 @@ body {
     height: 14rem;
     border-radius: 1rem;
     cursor: pointer;
+    object-fit: cover;
 }
 
 .grid-portfolio {
@@ -413,6 +414,13 @@ body {
 
 .modal.show .modal-dialog {
     margin: 15vh 5vw;
+    /*display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    flex-wrap: nowrap;
+    top: 10%;*/
 }
 
 .modal-body {
@@ -426,10 +434,12 @@ body {
 }
 
 .webui {
-    width: 100%;
     margin-left: -1rem;
     border-radius: 2rem 0 0 2rem;
     height: -webkit-fill-available;
+    width: 100%;
+    object-fit: scale-down;
+    background-color: #fff;
 }
 
 .popup-links {
@@ -1045,6 +1055,9 @@ body {
     }
     .portfolio {
         left: 28%;
+    }
+    .portfolio-images .vou-shop {
+        width: 34%;
     }
     .portfolio-images img {
         width: auto;
