@@ -56,7 +56,7 @@
 
             <section id="about-screen">
               <div class="col-xl-7 col-md-11 col-lg-8 about">
-                <h3 class="about-me">About me</h3>
+                <h3 class="about-me" id="about">About me</h3>
                 <p class="intro-me">
                   Hello, I'm Valentyn Troian. I live in Kherson, Ukraine.<br>
                   I'm junior web designer, who create UX/UI solutions for websites and apps.<br><br>
@@ -79,7 +79,7 @@
 
             <section id="portfolio-screen">
               <div class="col-xl-7 portfolio">
-                <h3 class="my-portfolio">Portfolio</h3>
+                <h3 class="my-portfolio" id="portfolio">Portfolio</h3>
                 <div class="portfolio-images">
                   <div class="col-xl-6 grid-portfolio">
                     <img src="img/cases/WebUI.jpg" alt="WebUI" data-toggle="modal" data-target="#webui">
@@ -100,7 +100,7 @@
 
             <section id="contacts-screen">
               <div class="col-xl-7 col-md-11 col-lg-8 contacts">
-                <h3 class="contact-me">Contact me</h3>
+                <h3 class="contact-me" id="contact">Contact me</h3>
                 <p class="contact-text">
                   I am always open to new people and new projects.<br>
                   Feel free and write me an E-Mail or Telegram. 
@@ -270,6 +270,44 @@
         $('#html-css').show();
         $('#html-css').animate_Text();
         }, 5500);
+
+        /*Знаю, говнокод, но лучшего решения я не нашел =)*/
+        let sect = document.getElementsByTagName('section');
+        let second = false;
+        let third = false;
+        let fourth = false;
+        let checker = setInterval(function() {
+
+            if (sect[0].classList.length == 2) {
+            //console.log("section 1 main");
+          } else if (sect[1].classList.length == 2) {
+            //console.log("section 2 about");
+            if(!second) {
+              $('#about').show();
+              $('#about').animate_Text();
+            }        
+            second = true;
+          } else if (sect[2].classList.length == 2) {
+            //console.log("section 3 portfolio");
+            if(!third) {
+              $('#portfolio').show();
+              $('#portfolio').animate_Text();
+            }        
+            third = true;
+          } else if (sect[3].classList.length == 2) {
+            //console.log("section 4 contacts");
+            if(!fourth) {
+              $('#contact').show();
+              $('#contact').animate_Text();
+            }        
+            fourth = true;
+          }  
+          if (second == true && third == true && fourth == true){
+            //console.log("All sections are done");
+            clearInterval(checker);
+          }
+        }, 1000);
+
       });
     </script>
   </body>
