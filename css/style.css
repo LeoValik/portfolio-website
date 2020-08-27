@@ -36,6 +36,23 @@
     --font-size-back-text: 32rem;
 }
 
+#Web-designer, #ui-ux, #html-css {
+    display:none;
+}
+#Web-designer .new, #ui-ux .new, #html-css .new{
+    opacity: 0;
+}
+#Web-designer .div_opacity , #ui-ux .div_opacity , #html-css .div_opacity {
+  -webkit-transition: opacity .1s ease-in-out;
+  -moz-transition: opacity .1s ease-in-out;
+  -ms-transition: opacity .1s ease-in-out;
+  -o-transition: opacity .1s ease-in-out;
+  transition: opacity .1s ease-in-out;
+  opacity: 1;
+}
+
+
+
 /* PRELOADER */
 #preloader {
     position: fixed;
